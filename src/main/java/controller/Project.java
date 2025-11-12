@@ -1,23 +1,13 @@
 package com.projetapi.model;
 
 public class Project {
+
     private int id;
     private String studentName;
     private String course;
     private String githubUrl;
-    private Integer grade; // Integer pour pouvoir être null au début
+    private int grade; // facultatif au départ
 
-    // Constructeurs
-    public Project() {}
-    
-    public Project(int id, String studentName, String course, String githubUrl) {
-        this.id = id;
-        this.studentName = studentName;
-        this.course = course;
-        this.githubUrl = githubUrl;
-    }
-
-    // Getters et Setters
     public int getId() { return id; }
     public void setId(int id) { this.id = id; }
 
@@ -30,6 +20,6 @@ public class Project {
     public String getGithubUrl() { return githubUrl; }
     public void setGithubUrl(String githubUrl) { this.githubUrl = githubUrl; }
 
-    public Integer getGrade() { return grade; }
-    public void setGrade(Integer grade) { this.grade = grade; }
+    public int getGrade() { return grade; }
+    public void setGrade(int grade) { this.grade = grade; }
 }
